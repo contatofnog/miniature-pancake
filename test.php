@@ -1,18 +1,19 @@
 <?php
 
-class Test {
+class Test
+{
 
-	private $name;
+    private $name;
 
-	public function setName($name)
-	{
-		$this->name = $name;
-	}
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
-	public function getName()
-	{
-		return $this->name;
-	}
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 $obj = new Test;
