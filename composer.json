@@ -1,6 +1,6 @@
 {
     "name": "virtual/miniature-pancake",
-    "require-dev": {
+    "require": {
         "phpunit/phpunit": "^8.1"
     },
     "autoload": {
