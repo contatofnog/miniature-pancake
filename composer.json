@@ -7,5 +7,20 @@
         "psr-4": {
             "MiniaturePancake\\": "src/"
         }
+    },
+
+    "scripts": {
+        "your-cmd": [
+            "mv Procfile procfile",
+            "chmod 755 src/"
+        ],
+
+        "post-install-cmd": [
+          "@your-cmd"
+        ],
+
+        "post-update-cmd": [
+          "@your-cmd"
+        ]
     }
 }
