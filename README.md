@@ -1,4 +1,4 @@
-# MiniaturePancake [![Build Status](https://api.travis-ci.com/contatofnog/miniature-pancake.svg?branch=master)](https://www.travis-ci.org/contatofnog/miniature-pancake)
+# MiniaturePancake [![Build Status](https://api.travis-ci.com/fnogcps/miniature-pancake.svg?branch=master)](https://www.travis-ci.org/fnogcps/miniature-pancake)
 
 :tada: Repository for testing with Travis CI + PHPUnit 
 
