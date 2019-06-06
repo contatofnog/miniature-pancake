@@ -4,7 +4,7 @@
 
 ### Testing
 ```
-$ git clone https://github.com/contatofnog/miniature-pancake
+$ git clone https://github.com/fnogcps/miniature-pancake
 $ cd miniature-pancake
 $ composer update
 $ ./vendor/bin/phpunit
