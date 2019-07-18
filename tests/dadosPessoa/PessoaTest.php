@@ -11,8 +11,7 @@ class PessoaTest extends TestCase
 
         $dados = new Pessoa();
         $dados->atribuirNome($pNome);
-        $this->assertEquals($pNome, $dados->exibirNome());
-        $this->assertTrue(is_string($dados->exibirNome()));
+        $this->assertSame($pNome, $dados->exibirNome());
     }
 
     public function testVerificarIdade()
@@ -21,20 +20,19 @@ class PessoaTest extends TestCase
 
         $dados = new Pessoa();
         $dados->atribuirIdade($pIdade);
-        $this->assertEquals($pIdade, $dados->exibirIdade());
-        $this->assertTrue(is_integer($dados->exibirIdade()));
+        $this->assertSame($pIdade, $dados->exibirIdade());
     }
 
     public function testVerificarEmail()
     {
-        $pEmail = 'example@example.com';
+        $pEmail = 'joaosilva@email.com';
 
         $dados = new Pessoa();
         $dados->atribuirEmail($pEmail);
-        $this->assertEquals($pEmail, $dados->exibirEmail());
-        $this->assertEquals($pEmail, $dados->exibirEmail());
-        $this->assertEquals(
-            $pEmail, filter_var($dados->exibirEmail(), FILTER_VALIDATE_EMAIL) 
+        $this->assertSame(
+            $pEmail, 
+            $dados->exibirEmail(),
+            filter_var($dados->exibirEmail(), FILTER_VALIDATE_EMAIL),
         );
     }
 }
