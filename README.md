@@ -7,7 +7,7 @@
 $ git clone https://github.com/fnogcps/miniature-pancake
 $ cd miniature-pancake
 $ composer update
-$ ./vendor/bin/phpunit
+$ ./vendor/bin/phpunitt --testdox
 ```
 
 ### Screenshot
