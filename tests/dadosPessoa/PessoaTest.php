@@ -32,7 +32,7 @@ class PessoaTest extends TestCase
         $this->assertSame(
             $pEmail, 
             $dados->exibirEmail(),
-            filter_var($dados->exibirEmail(), FILTER_VALIDATE_EMAIL),
+            filter_var($dados->exibirEmail(), FILTER_VALIDATE_EMAIL)
         );
     }
 }
